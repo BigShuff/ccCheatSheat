@@ -11,9 +11,91 @@
     <title>Look-up Reference</title>
 </head>
 
-
 <body>
-    
+    <!-- Forming left and right borders to container class below showing in dark green -->
+    <!-- Centred container showing in antique white -->
+    <div class="container">
+        <!-- table containing the script of the document -->
+        <table>
+            <tr class="headRow">
+                <th class="heading">CSS </br> Look-up Reference</th>
+            </tr>
+
+            <tr class="blocker"></tr>
+            <tr>
+                <th>What is CSS Specificity?</th>
+            </tr>
+            <tr>
+                <td>In simple words, if you have multiple CSS <b>selectors</b> for one element,
+                    <b>Selector</b>{Property: Value;}
+                    the one with the higher specific value will be applied. <i>Note the property and the value together
+                        are referred to as a 'declaration'</i>. The
+                    selector references the HTML element by its HTML tag e.g. '&lt;div&gt;,&lt;p&gt; or &lt;h1&gt;' or
+                    its class e.g. '.myClass' or through its id eg. '#myId'.
+                    Browsers award 'selectors' ratings, based on whether an element has been referenced by its tag,
+                    class
+                    or id. When loading the page the browser will give the
+                    selector with the highest rating, 'declaration precedence' when displaying the HTML.
+                </td>
+            </tr>
+            <tr class="blocker"></tr>
+            <tr>
+                <th>Rules of Specificity</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>CSS written between HTML &lt;style&gt; tags always takes precedence over CSS written in
+                            external files and CSS written with the style attribute of an HTML
+                            tag (an inline style) always takes precedence over an HTML &lt;style&gt; tag. So the order
+                            of precedence is</li>
+                        <ol>
+                            <li>Inline styles</li>
+                            <li>Style tags &lt;style&gt;</li>
+                            <li>External style sheets</li>
+                        </ol>
+                        <li>In addition browsers process style sheets from top to bottom. This
+                            means declarations that appear later in the style sheet overwrite those that came
+                            before.</br> E.g.</br><i>.myClass {font-size: 40px; colour: orange;}</br>.myClass
+                                {font-size: 20px; colour: green;}</i> </br>As you can see both declarations target the
+                            same selector but because the declaration '20px and green' is the
+                            last declaration it gets precedence.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="blocker"></tr>
+            <tr>
+                <th>Calculating Specificity</th>
+            </tr>
+            <tr>
+                <td>The specificity value can be calculated with the following base 10 guideline, however they are not
+                    actually counted using the base 10 system (thousands, hundreds, tens
+                    and units etc) however the base 10 system allows us to easily see which takes precedence over the
+                    other.
+                </td>
+            </tr>
+            <tr class="blocker"></tr>
+            <tr>
+                <th>Scoring and Examples</th>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li>Elements and pseudo-elements score 0001 (one) Example
+                            &lt;div&gt;,&lt;h1&gt;,&lt;a&gt;,&lt;p&gt; etc. and also pseudo-elements
+                            like :before and :after. </li>
+                        <li>Class or pseudo-class and attribute selectors score 0010 (ten) Example '.myClass', attribute
+                            selectors
+                            eg. 'p [class=myHeader]' and also pseudo-classes such as
+                            :hover.</li>
+                        <li>ID selectors score 0100 (one hundred) Example. '#myid' .
+                            Best practice suggests id selectors should only appear once in a single HTML file. Further
+                            they should be applied to the most important piece of information in the HTML file.</li>
+                        <li>Inline style score 1000 (one thousand) Example &lt;p style="color:#999;"&gt;
+                        </li>
+                    </ol>
+        </table>
 </body>
 
 </html>

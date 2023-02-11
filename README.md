@@ -6,5 +6,4 @@ The content is all held within a tables. The very last table is for aesthetic re
 
 To add another items simply remove this table and add another table for the new item you are adding.
 
-ampersandlt; = <
-ampersandgt; = >
+see html file for how to do the < and the >

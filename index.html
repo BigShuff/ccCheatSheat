@@ -96,6 +96,60 @@
                         </li>
                     </ol>
         </table>
+        <!-- start of table showing specificity examples -->
+        <table class="exampleTable">
+            <tr columnspan="3">
+                <th>Examples</th>
+            </tr>
+            <ol>
+                <tr>
+                    <th>Selector</th>
+                    <th>Specificity Value</th>
+                    <th>Calculation</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>div .myClass</td>
+                    <td>11</td>
+                    <td>1+10</td>
+                </tr>
+                <tr>
+                    <td>div #myId</td>
+                    <td>101</td>
+                    <td>1+100</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt; style="color: pink;"&lt;/p&gt;</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>* (universal selector)</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </ol>
+        </table>
+        <!-- this is here as an easy way to add a bit of space at the end of the document no external css simply delete if required next time document is added to. -->
+        <table>
+            <tr class="blocker"></tr>
+            <tr>
+                <th>*Important footnote</th>
+            </tr>
+            <tr>
+                <td>The <b>'!important'</b> rule in CSS is used to add more importance to a selector than normal. Use of
+                    the !important rule, will override
+                    all previous styling rules for that specific property on that element! Whilst the rule is not
+                    directly the subject of specificity it will have
+                    significant bearing on the selector.</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>

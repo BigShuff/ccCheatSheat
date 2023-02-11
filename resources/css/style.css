@@ -51,3 +51,26 @@ p {
     font-weight: 300;
     font-size: 1rem;
 }
+
+.exampleTable {
+    padding: 1rem 0;
+    margin-left: 30px;
+    width: 50%;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+.exampleTable th {
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+ul {
+    margin: 0;
+    
+}
+
+ol{
+    margin-top: 0;
+}

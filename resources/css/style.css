@@ -29,8 +29,7 @@ table .headRow .heading {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    color: maroon;
-    opacity: 50;
+    color: rgba(80, 00, 00, 0.5);
     padding: 15px 0px;
 }
 
